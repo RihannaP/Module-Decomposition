@@ -23,6 +23,10 @@ app.post("/", usernameExtractor,(req, res) => {
       .send("Error: Array must contain only string elements.");
   }
 
+  let response = username
+    ? `You are authenticated as ${username}.\n`
+    : `You are not authenticated.\n`;
+
 
 
  
