@@ -27,7 +27,14 @@ app.post("/", usernameExtractor,(req, res) => {
     ? `You are authenticated as ${username}.\n`
     : `You are not authenticated.\n`;
 
-
+  const count = subjects.length;
+  const subjectArr = subjects.join(", ");
+  if (count === 0) {
+    response += "You have requested information about 0 subject.";
+  } else {
+    const plural = count > 1 ? "subjects" : "subject";
+    response += `You have requested information about ${count} ${plural}: ${subjectArr}.`;
+  }
 
  
 
