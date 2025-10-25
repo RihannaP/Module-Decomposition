@@ -9,6 +9,14 @@ function usernameExtractor(req, res, next) {
   next();
 }
 
+app.post("/", usernameExtractor,(req, res) => {
+  const username = req.username;
+  const subjects = req.body;
+
+ 
+
+  res.send(response);
+});
 
 const PORT = 3000;
 app.listen(PORT, () => {
