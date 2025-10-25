@@ -1,6 +1,7 @@
 {
   "name": "module-decomposition",
   "version": "1.0.0",
+  "type": "module",
   "description": "Exercises to practice and solidify your understanding of the Decomposition module of the Software Development Course.",
   "main": "index.js",
   "scripts": {
