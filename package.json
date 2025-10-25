@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/RihannaP/Module-Decomposition/issues"
   },
-  "homepage": "https://github.com/RihannaP/Module-Decomposition#readme"
+  "homepage": "https://github.com/RihannaP/Module-Decomposition#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
